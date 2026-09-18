@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Making the Cut at Pixar — Искусство Монтажа Анимации в Pixar</title>
+  <meta name="description" content="Companion video materials for «Making the Cut at Pixar — Искусство Монтажа Анимации в Pixar»." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Искусство Монтажа Анимации в Pixar</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#videos">Видеоматериалы</a>
+        <a href="#chapters">Главы</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">Сайт-компаньон</p>
+      <h1>Видеоматериалы</h1>
+      <p class="intro">
+        На этом сайте-компаньоне собраны 41 видео, дополняющие текст каждой главы.
+        Тщательно отобранные материалы и интервью помогают раскрыть творческую роль монтажера в производстве анимации.
+      </p>
+    </section>
+
+    <section id="chapters" class="container chapters-section" aria-labelledby="chapters-title">
+      <div class="section-heading">
+        <h2 id="chapters-title">Главы</h2>
+        <p>Выберите главу, чтобы открыть связанные с ней видеоматериалы.</p>
+      </div>
+      <div id="chapter-grid" class="chapter-grid"></div>
+    </section>
+
+    <section id="videos" class="container videos-section" aria-labelledby="videos-title">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow">Видеотека</p>
+          <h2 id="videos-title">Глава 1</h2>
+          <p id="chapter-subtitle" class="chapter-subtitle"></p>
+        </div>
+        <a href="#chapters" class="back-link">← Все главы</a>
+      </div>
+      <div id="video-grid" class="video-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>Making the Cut at Pixar</span>
+      <span>Видеоматериалы</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
