@@ -15,10 +15,10 @@
   Номера 1.1, 1.2, 2.1 и т. д. соответствуют видео из каталога.
 */
 const videoLinksText = `
-1.1 - https://rutube.ru/video/private/17ec1947a6e1c7c28d65d09818c2b503/?p=Pq7kxL72lCXtkfDwLAls0A
-1.2 - https://youtu.be/FUwxFGt6k6M?si=-gAbliDYQHm2Hdil
-1.3 - https://vimeo.com/manage/videos/1030162693
-2.1 - https://youtu.be/6s2j4APrun0
+1.1 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
+1.2 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
+1.3 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
+2.1 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
 2.2 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
 2.3 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
 2.4 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
@@ -266,7 +266,6 @@ function renderChapters() {
 function renderVideos(chapter) {
   const grid = document.getElementById("video-grid");
   document.getElementById("videos-title").textContent = `Глава ${chapter.id}: ${chapter.title}`;
-  document.getElementById("chapter-subtitle").textContent = chapter.subtitle;
 
   grid.innerHTML = chapter.videos.map((video, index) => {
     const number = `${chapter.id}.${index + 1}`;
