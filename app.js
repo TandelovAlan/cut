@@ -16,10 +16,10 @@
 */
 const videoLinksText = `
 1.1 - https://rutube.ru/video/private/17ec1947a6e1c7c28d65d09818c2b503/?p=Pq7kxL72lCXtkfDwLAls0A
-1.2 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
+1.2 - https://youtu.be/FUwxFGt6k6M?si=-gAbliDYQHm2Hdil
 1.3 - https://vimeo.com/manage/videos/1030162693
-2.1 - https://youtu.be/FUwxFGt6k6M?si=-gAbliDYQHm2Hdil
-2.2 - https://rutube.ru/video/private/17ec1947a6e1c7c28d65d09818c2b503/?p=Pq7kxL72lCXtkfDwLAls0A
+2.1 - https://youtu.be/6s2j4APrun0
+2.2 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
 2.3 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
 2.4 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
 2.5 - https://rutube.ru/video/24ec8c1ca6b5cac06f06abf3a5e74117/
