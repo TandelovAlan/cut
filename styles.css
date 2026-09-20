@@ -141,7 +141,7 @@ h1, h2, h3, p { margin-top: 0; }
 
 h1 {
   display: inline-block;
-  margin: 0 0 34px;
+  margin: 0 0 48px;
   position: relative;
   font-family: "CUT PIXAR", "Segoe Print", cursive;
   font-size: clamp(66px, 7vw, 106px);
