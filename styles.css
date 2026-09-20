@@ -167,7 +167,7 @@ h1::after {
   max-width: 790px;
   margin: 0;
   color: var(--muted);
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 1.42;
 }
