@@ -123,11 +123,12 @@ a { color: inherit; }
 .main-nav a:hover { color: #ffe613; }
 
 .hero {
-  padding: 42px 0 40px;
-  min-height: 360px;
+  padding: 42px 0 34px;
+  min-height: 330px;
 }
 
 .eyebrow {
+  text-transform: uppercase;
   margin: 0 0 2px;
   color: var(--red);
   font-family: "CUT PIXAR", "Segoe Print", cursive;
@@ -166,8 +167,8 @@ h1::after {
   margin: 0;
   color: var(--muted);
   font-family: "Trebuchet MS", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.46;
+  font-size: 21px;
+  line-height: 1.42;
 }
 
 .chapters-section,
@@ -365,13 +366,21 @@ h1::after {
   position: relative;
   z-index: 1;
   border: 0;
-  padding: 15px 24px 13px;
-  display: inline-flex;
+  width: min(88%, 340px);
+  max-width: calc(100% - 28px);
+  min-height: 74px;
+  padding: 11px 18px 10px;
+  display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 9px;
   border-radius: 4px;
   font-family: "CUT PIXAR", "Segoe Print", cursive;
-  font-size: 23px;
+  font-size: clamp(17px, 1.7vw, 23px);
+  line-height: .98;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
   font-weight: 700;
   color: var(--ink);
   background: var(--paper);
@@ -384,7 +393,14 @@ h1::after {
   transform: translateY(-2px) rotate(-1deg);
   box-shadow: 4px 6px 0 var(--ink);
 }
-.play-icon { color: var(--red); font-size: 19px; }
+.play-icon {
+  flex: 0 0 auto;
+  color: var(--red);
+  font-size: clamp(16px, 1.5vw, 19px);
+}
+.video-play span:last-child {
+  min-width: 0;
+}
 
 .video-placeholder iframe {
   width: 100%;
@@ -462,3 +478,22 @@ h1::after {
 #videos .eyebrow { display: none; }
 #videos .section-heading h2::before { content: none; display: none; }
 
+
+@media (max-width: 900px) {
+  .video-play {
+    width: min(92%, 340px);
+    min-height: 68px;
+    padding-inline: 14px;
+    font-size: clamp(16px, 3.2vw, 21px);
+  }
+}
+
+@media (max-width: 560px) {
+  .video-play {
+    width: calc(100% - 24px);
+    min-height: 64px;
+    padding: 9px 12px;
+    gap: 7px;
+    font-size: clamp(15px, 5vw, 19px);
+  }
+}
