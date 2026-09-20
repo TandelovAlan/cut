@@ -257,7 +257,7 @@ function renderChapters() {
   container.innerHTML = chapters.map(chapter => `
     <a class="chapter-card" href="#chapter-${chapter.id}" onclick="selectChapter(${chapter.id}); return false;">
       <span class="chapter-number">Глава ${chapter.id}</span>
-      <h3>Глава ${chapter.id}: ${chapter.title}</h3>
+      <h3>ГЛАВА ${chapter.id}: ${chapter.title.toUpperCase()}</h3>
       <p>${chapter.subtitle}</p>
     </a>
   `).join("");
@@ -265,7 +265,7 @@ function renderChapters() {
 
 function renderVideos(chapter) {
   const grid = document.getElementById("video-grid");
-  document.getElementById("videos-title").textContent = `Глава ${chapter.id}: ${chapter.title}`;
+  document.getElementById("videos-title").textContent = `ГЛАВА ${chapter.id}: ${chapter.title.toUpperCase()}`;
 
   grid.innerHTML = chapter.videos.map((video, index) => {
     const number = `${chapter.id}.${index + 1}`;
